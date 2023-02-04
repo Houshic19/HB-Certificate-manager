@@ -1,0 +1,59 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Login Form</title>    
+    <link rel="stylesheet" type="text/css" href="css/style.css">  
+<style>
+      body {
+        background-image: url('file:///C:/Users/ajayk/Downloads/Certificate.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: local;
+        background-position: 50% 50%;
+	overflow: hidden;
+      }
+    </style>  
+    <script type="text/javascript">
+    	function a(){
+        	var College_Mailid=document.getElementById("Uname").value;
+		var Password=document.getElementById("Pass").value;
+		if(College_Mailid ==="ajaykumar.2001009@srec.ac.in" && Password ==="hangover"){
+		  alert("You are Successfully logged in!");
+		window.location.href="file:///C:/Users/ajayk/OneDrive/Documents/Certificate/Index/index.html"
+		return false;
+		}
+		else if(College_Mailid ==="Valapalam" && Password ==="hou"){
+		  alert("You are Successfully logged in!");
+		window.location.href="file:///C:/Users/ajayk/OneDrive/Documents/Certificate/Index/index.html"
+		return false;
+		}
+		   else{
+			alert("Either College Mail id or password is incorrect");
+			return false;
+			}
+		}
+     </script>	
+</head>   
+<body>    
+    <h2>Login Page</h2><br>    
+    <div class="login">    
+    <form id="login" method="POST">    
+        <label><b>College Mail Id   
+        </b>    
+        </label>    
+        <input type="text" name="Uname" id="Uname" placeholder="Enter the id">    
+        <br><br>    
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+        <br><br>    
+        <input type="button" name="log" id="log" value="Log In Here" onclick="return a();">      
+	<br><br>  
+        <input type="checkbox" id="check">    
+        <span>Remember me</span>    
+        <br><br>    
+        <a href="file:///C:/Users/ajayk/Downloads/login/login/index.html">Forgot Password</a> 
+    </form>     
+</div>    
+</body>    
+</html>

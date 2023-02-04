@@ -1,0 +1,113 @@
+/*********/
+/*  publicrecords.css  */
+/*  2016.12.25 15:06   */
+/*********/
+/* PRESETS */
+*, *:before, *:after {
+    box-sizing:border-box;
+ }
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+ }
+.cf:after {
+    clear:both;
+ }
+.trow {
+    display:table-row;
+ }
+.tcell {
+    display:table-cell;
+    padding:0;
+ }
+/* end PRESETS */
+/* **** page structure **** */
+body {
+    background:url(bgrecords.gif);
+    background-attachment:fixed;
+    font: 1em/1.62em 'Times New Roman',Times,serif;
+ }
+.content {
+    width: 85%;
+    margin: auto;
+    border: 0.5em solid transparent;
+    padding: 1em;
+    box-sizing: border-box;
+    border-image: url(publicrecordsborder.png)8;
+    background-image: url(bglight.jpg);
+    background-clip: padding-box;
+ }
+/* header */
+h1 {
+    line-height: 1em;
+    font-size: 3em;
+    text-align: center;
+ }
+/* table layout */
+.documents {
+    width: 80%;
+    margin: 2em auto;
+    border: 0.15em solid #000;
+    border-collapse: collapse;
+    text-align: center;
+ }
+.documents th,
+.documents td {
+    padding: 0.25em;
+ }
+.documents th {
+    border-bottom: 0.06em solid #000;
+    font-size: 1.5em;
+    font-weight: normal;
+ }
+.documents th:last-of-type {
+    width: 22%;
+ }
+.documents th:last-of-type,
+.documents tr td:last-of-type {
+    border-left: 0.06em dotted #000;
+ }
+.documents a {
+    width: auto;
+ }
+/* END TABLE */
+/* general styles */
+p {
+    font-size: 18pt;
+    text-align: center;
+ }
+a {
+    margin: 0 auto;
+    display: block;
+    width: 12em;
+    margin: 1em auto;
+    text-align: center;
+ }
+a:hover, a:focus {
+    text-decoration:none;
+    color: #4d4dff;
+ }
+a:visited {
+    color: #603;
+ }
+a:visited:hover, a:visited:focus {
+    text-decoration: none;
+ }
+.content #copyright {
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+ }
+/* media queries */
+@media screen and (max-width: 30em) {
+.content {
+    width: 100%;
+    padding: 0.25em;
+  }
+.documents {
+    width: 100%;
+    font-size: 0.75em;
+  }
+ }
+/* END */

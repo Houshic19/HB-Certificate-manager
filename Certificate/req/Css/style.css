@@ -1,0 +1,108 @@
+#fb{
+  display:flex;
+  align-items:center ;
+justify-content:center;
+flex-direction :column;
+  width:100%;
+  border:1px solid gray;
+  border-radius:5px;
+  
+  height:175px;
+}
+#fb p{
+  font-family:sans-serif;
+  margin: 0 0 0 10px;
+  line-height:30px;
+}
+.button {
+  border: none;
+  color:#777;
+  padding: 20px 32px;
+display: flex!important;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+width: 300px;
+}
+
+.button1 {
+  background-color: #D3B4AC; 
+  color: black; 
+  
+}
+
+#fb-top span{
+  color:#4267B2;
+  float:right;
+  margin-right:10px;
+}
+#fb-top{
+  background-color:#efefef;
+  height:30px;
+  width:500px;
+  border-radius:5px 5px 0 0;
+margin-bottom: 10px;
+  border:1px solid gray;
+}
+
+#fb img{
+  position:absolute;
+  left:10px;
+  top:52.5px;
+}
+
+
+
+#info {
+  color:#4267B2;
+  line-height:25px;
+  font-size:18px;
+}
+
+#info span{
+  color:#777;
+  font-size:14px;
+}
+
+#button-block{
+  width: 200px;
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+  
+}
+
+#button-block div{
+  display:inline-block;
+}
+
+#confirm, #delete{
+  background-color:#4267B2;
+  color:white;
+  padding:7px;
+  text-decoration: none;
+  border-radius:2px;
+  margin-right:10px;
+  font-family:sans-serif;
+}
+
+#delete{
+  color:#222;
+  background-color:#bbb;
+  border:1px solid #999;
+  padding:6px;
+  margin-right:0;
+}
+
+#button-block div:hover{
+  opacity:.8;
+  cursor:pointer;
+}
